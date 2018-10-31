@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "type": "apiHubFileTrigger",
+      "name": "inputFile",
+      "direction": "in",
+      "path": "Cookbook/{name}.json",
+      "connection": "onedrive_ONEDRIVE"
+    }
+  ],
+  "disabled": false
+}

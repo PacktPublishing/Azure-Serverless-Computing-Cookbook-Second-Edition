@@ -1,0 +1,1065 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Azure.WebJobs.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Azure.WebJobs.CoreJobHostConfigurationExtensions">
+            <summary>
+            Extension methods for Core extension integration. This registers support for
+            <see cref="T:Microsoft.Azure.WebJobs.ErrorTriggerAttribute"/> trace monitoring, as well as support for
+            the <see cref="T:Microsoft.Azure.WebJobs.ExecutionContext"/> binding.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.CoreJobHostConfigurationExtensions.UseCore(Microsoft.Azure.WebJobs.JobHostConfiguration)">
+            <summary>
+            Registers the Core extensions
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.ExecutionContext">
+            <summary>
+            Provides context information for job function invocations.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.ExecutionContext.InvocationId">
+            <summary>
+            The job function invocation ID
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Core.ExecutionContextBindingProvider">
+            <summary>
+            This provider provides a binding to Type <see cref="T:Microsoft.Azure.WebJobs.ExecutionContext"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Core.Listener.ErrorTriggerListener.ErrorHandlers">
+            <summary>
+            Gets the collection of full method names of all error handler functions
+            that have been bound to.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Bindings.FileAttributeBindingProvider.TryCreateAsync(Microsoft.Azure.WebJobs.Host.Bindings.BindingProviderContext)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Bindings.FileTriggerAttributeBindingProvider.TryCreateAsync(Microsoft.Azure.WebJobs.Host.Triggers.TriggerBindingProviderContext)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration">
+            <summary>
+            Configuration object for the Files extension. Governs the behavior of functions attributed
+            with <see cref="T:Microsoft.Azure.WebJobs.FileTriggerAttribute"/> and <see cref="T:Microsoft.Azure.WebJobs.FileAttribute"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration.RootPath">
+            <summary>
+            Gets or sets the root path where files will monitoring
+            and created.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration.ProcessorFactory">
+            <summary>
+            Gets or sets the <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.IFileProcessorFactory"/> that will be used
+            to create <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor"/> instances.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor">
+            <summary>
+            Default file processor used by <see cref="T:Microsoft.Azure.WebJobs.FileTriggerAttribute"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.#ctor(Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext"/> to use.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.StatusFileExtension">
+            <summary>
+            Gets the file extension that will be used for the status files
+            that are created for processed files.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.MaxDegreeOfParallelism">
+            <summary>
+            Gets the maximum degree of parallelism that will be used
+            when processing files concurrently.
+            </summary>
+            <remarks>
+            Files are added to an internal processing queue as file events
+            are detected, and they're processed in parallel based on this setting.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.MaxQueueSize">
+            <summary>
+            Gets the bounds on the maximum number of files that can be queued
+            up for processing at one time. When set to -1, the work queue is
+            unbounded.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.MaxProcessCount">
+            <summary>
+            Gets the maximum number of times file processing will
+            be attempted for a file.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.InstanceId">
+            <summary>
+            Gets the current role instance ID. In Azure WebApps, this will be the
+            WEBSITE_INSTANCE_ID. In non Azure scenarios, this will default to the
+            Process ID.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.ProcessFileAsync(System.IO.FileSystemEventArgs,System.Threading.CancellationToken)">
+            <summary>
+            Process the file indicated by the specified <see cref="T:System.IO.FileSystemEventArgs"/>.
+            </summary>
+            <param name="eventArgs">The <see cref="T:System.IO.FileSystemEventArgs"/> indicating the file to process.</param>
+            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/> to use.</param>
+            <returns>
+            A <see cref="T:System.Threading.Tasks.Task"/> that returns true if the file was processed successfully, false otherwise.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.GetRetryInterval(Microsoft.Azure.WebJobs.Host.Executors.FunctionResult,System.Int32)">
+            <summary>
+            Gets the next retry interval to use.
+            </summary>
+            <param name="result">The <see cref="T:Microsoft.Azure.WebJobs.Host.Executors.FunctionResult"/> for the last failure.</param>
+            <param name="count">The current execution count (the number of times the function has
+            been invoked).</param>
+            <returns>A <see cref="T:System.TimeSpan"/> representing the delay interval that should be used.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.Cleanup">
+            <summary>
+            Perform any required cleanup. This includes deleting processed files
+            (when <see cref="P:Microsoft.Azure.WebJobs.FileTriggerAttribute.AutoDelete"/> is True).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.ShouldProcessFile(System.String)">
+            <summary>
+            Determines whether the specified file should be processed.
+            </summary>
+            <param name="filePath">The candidate file for processing.</param>
+            <returns>True if the file should be processed, false otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor.CleanupProcessedFiles">
+            <summary>
+            Clean up any files that have been fully processed
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext">
+            <summary>
+            Context input for <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.IFileProcessorFactory"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext.#ctor(Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration,Microsoft.Azure.WebJobs.FileTriggerAttribute,Microsoft.Azure.WebJobs.Host.Executors.ITriggeredFunctionExecutor,Microsoft.Azure.WebJobs.Host.TraceWriter)">
+            <summary>
+            Constructs a new instance
+            </summary>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration"/></param>
+            <param name="attribute">The <see cref="T:Microsoft.Azure.WebJobs.FileTriggerAttribute"/></param>
+            <param name="executor">The function executor.</param>
+            <param name="trace">The <see cref="T:Microsoft.Azure.WebJobs.Host.TraceWriter"/>.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext.Config">
+            <summary>
+            The <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration"/>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext.Attribute">
+            <summary>
+            The <see cref="T:Microsoft.Azure.WebJobs.FileTriggerAttribute"/>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext.Executor">
+            <summary>
+            Gets the function executor
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext.Trace">
+            <summary>
+            Gets the <see cref="T:Microsoft.Azure.WebJobs.Host.TraceWriter"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.IFileProcessorFactory">
+            <summary>
+            Factory interface for creating <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor"/> instances. This factory pattern allows
+            different FileProcessors to be used for different job functions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Files.Listener.IFileProcessorFactory.CreateFileProcessor(Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessorFactoryContext)">
+            <summary>
+            Create a <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor"/> for the specified inputs.
+            </summary>
+            <param name="context">The context to use.</param>
+            <returns>The <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.FileProcessor"/></returns>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.ProcessingState">
+            <summary>
+            Enumeration of the possible processing states a
+            file can be in.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.WebJobs.Extensions.Files.Listener.ProcessingState.Processing">
+            <summary>
+            The file is being processed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.WebJobs.Extensions.Files.Listener.ProcessingState.Processed">
+            <summary>
+            Processing is complete for the file.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Azure.WebJobs.Extensions.Files.Listener.ProcessingState.Failed">
+            <summary>
+            Processing has failed for the file.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.StatusFileEntry">
+            <summary>
+            Represents a single status entry in the status file.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.StatusFileEntry.State">
+            <summary>
+            Gets or sets the current <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.Listener.ProcessingState"/>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.StatusFileEntry.Timestamp">
+            <summary>
+            Gets or sets the timestamp of the entry.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.StatusFileEntry.LastWrite">
+            <summary>
+            Gets or sets the timestamp of the last write to the target file.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.StatusFileEntry.ChangeType">
+            <summary>
+            Gets or sets the <see cref="T:System.IO.WatcherChangeTypes"/> enumeration value indicating
+            which type of file operation this entry is for.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.StatusFileEntry.InstanceId">
+            <summary>
+            Gets or sets the ID of the instance that created this entry.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Files.Listener.StatusFileEntry.ProcessCount">
+            <summary>
+            Gets or sets the number of times processing for the the file
+            for this entry has been attempted.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.SlidingWindowTraceFilter">
+            <summary>
+            <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/> that maintains a sliding time window, and only triggers
+            notifications if the number of matching trace messages within that time window
+            exceeds a threshold.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.SlidingWindowTraceFilter.#ctor(System.TimeSpan,System.Int32,System.Func{Microsoft.Azure.WebJobs.Host.TraceEvent,System.Boolean},System.String,System.Diagnostics.TraceLevel)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="window">The duration of the sliding window.</param>
+            <param name="threshold">The maximum number of matching trace messages to allow before triggering a notification.</param>
+            <param name="filter">The optional event filter to apply on each <see cref="T:Microsoft.Azure.WebJobs.Host.TraceEvent"/>.</param>
+            <param name="message">The optional message to use for notifications.</param>
+            <param name="level">The maximum trace level of trace messages that will match the filter.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.SlidingWindowTraceFilter.Message">
+            <summary>
+            Gets the message that should be used in notifications.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.SlidingWindowTraceFilter.Threshold">
+            <summary>
+            Gets maximum number of matching trace messages to allow before triggering a notification.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.SlidingWindowTraceFilter.GetEvents">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.SlidingWindowTraceFilter.Filter(Microsoft.Azure.WebJobs.Host.TraceEvent)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.SlidingWindowTraceFilter.FilterCore(Microsoft.Azure.WebJobs.Host.TraceEvent)">
+            <summary>
+            Determines whether the trace matches the filter and should be counted.
+            Can be overridden by subclasses to perform additional checks on the
+            trace.
+            </summary>
+            <param name="traceEvent">The <see cref="T:Microsoft.Azure.WebJobs.Host.TraceEvent"/> to filter.</param>
+            <returns>True if the trace message passes the filter and should be counted, false otherwise.</returns>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter">
+            <summary>
+            Defines a filter used by <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor"/> to filter trace messages.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.TraceFilter.Message">
+            <summary>
+            Gets the notification message for this filter that should be used
+            when performing subscription notifications.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceFilter.GetEvents">
+            <summary>
+            Gets a snapshot of the current accumulated collection of <see cref="T:Microsoft.Azure.WebJobs.Host.TraceEvent"/>s that have
+            passed the filter.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceFilter.Filter(Microsoft.Azure.WebJobs.Host.TraceEvent)">
+            <summary>
+            Inspects the specified <see cref="T:Microsoft.Azure.WebJobs.Host.TraceEvent"/> and accumulates it
+            as needed if it matches the filter.
+            </summary>
+            <param name="traceEvent">The <see cref="T:Microsoft.Azure.WebJobs.Host.TraceEvent"/> to filter.</param>
+            <returns>True if the trace message should result in all subscribers being
+            notified, false otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceFilter.Create(System.Func{Microsoft.Azure.WebJobs.Host.TraceEvent,System.Boolean},System.String)">
+            <summary>
+            Creates an anonymous <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/>.
+            </summary>
+            <param name="predicate">The function to use to filter events.</param>
+            <param name="message">The optional subscription notification message to use.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceFilter.GetDetailedMessage(System.Int32)">
+            <summary>
+            Returns a formatted string containing the notification <see cref="P:Microsoft.Azure.WebJobs.Extensions.TraceFilter.Message"/> as well
+            as full details on the last <paramref name="count"/> events.
+            </summary>
+            <param name="count">The number of detailed events to include (starting from
+            the most recent).</param>
+            <returns>The formatted string.</returns>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor">
+            <summary>
+            <see cref="T:Microsoft.Azure.WebJobs.Host.TraceWriter"/> that can be used to monitor the stream of trace events
+            and notify subscribers when certain filter thresholds are reached, based on the
+            collection of <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/>s and subscriptions configured.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.#ctor(System.Diagnostics.TraceLevel)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="level">The <see cref="T:System.Diagnostics.TraceLevel"/> for this <see cref="T:Microsoft.Azure.WebJobs.Host.TraceWriter"/>.
+            Defaults to <see cref="F:System.Diagnostics.TraceLevel.Error"/>.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.Filters">
+            <summary>
+            Gets the collection of <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/>s that will be used to
+            monitor the trace stream.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.Subscriptions">
+            <summary>
+            Gets the collection of subscribers that will be notified
+            when <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/>s trigger notifications.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.Trace(Microsoft.Azure.WebJobs.Host.TraceEvent)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.Notify(Microsoft.Azure.WebJobs.Extensions.TraceFilter)">
+            <summary>
+            Notify all subscribers that the specified filter has has triggered
+            a notification.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.Filter(Microsoft.Azure.WebJobs.Extensions.TraceFilter[])">
+            <summary>
+            Add the specified <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/>(s) to this <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor"/>.
+            </summary>
+            <param name="filters">The <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/>(s) to add.</param>
+            <returns>This <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor"/> instance.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.Filter(System.Func{Microsoft.Azure.WebJobs.Host.TraceEvent,System.Boolean},System.String)">
+            <summary>
+            Add the specified filter function to this <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor"/>.
+            </summary>
+            <param name="predicate">The filter predicate.</param>
+            <param name="message">The optional subscription notification message to use.</param>
+            <returns>This <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor"/> instance.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.Subscribe(System.Action{Microsoft.Azure.WebJobs.Extensions.TraceFilter}[])">
+            <summary>
+            Add the specified subscription(s) to this <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor"/>.
+            </summary>
+            <param name="subscriptions">The subscription(s) to add.</param>
+            <returns>This <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor"/> instance.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.TraceMonitor.Throttle(System.TimeSpan)">
+            <summary>
+            Sets the throttle limit for subscriber notifications. When set, registered
+            subscribers be notified at most once per throttle window.
+            </summary>
+            <param name="throttle">The time window defining the throttle limit.</param>
+            <returns>This <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceMonitor"/> instance.</returns>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleStatus">
+            <summary>
+            Represents a timer schedule status
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleStatus.Last">
+            <summary>
+            The last recorded schedule occurrence
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleStatus.Next">
+            <summary>
+            The expected next schedule occurrence
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.StorageScheduleMonitor">
+            <summary>
+            <see cref="T:Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleMonitor"/> that stores schedule information in blob storage.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.StorageScheduleMonitor.#ctor(Microsoft.Azure.WebJobs.JobHostConfiguration,Microsoft.Azure.WebJobs.Host.TraceWriter)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="hostConfig">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/>.</param>
+            <param name="trace">The <see cref="T:Microsoft.Azure.WebJobs.Host.TraceWriter"/>.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Timers.StorageScheduleMonitor.TimerStatusDirectory">
+            <summary>
+            Gets the blob directory where timer statuses will be stored.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.StorageScheduleMonitor.GetStatusAsync(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.StorageScheduleMonitor.UpdateStatusAsync(System.String,Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleStatus)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.TimersConfiguration">
+            <summary>
+            Configuration object for <see cref="T:Microsoft.Azure.WebJobs.TimerTriggerAttribute"/> decorated job functions.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Timers.TimersConfiguration.ScheduleMonitor">
+            <summary>
+            Gets or sets the schedule monitor used to persist
+            schedule occurrences and monitor execution.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.Listeners.TimerListener.InvokeJobFunction(System.DateTime,System.Boolean,System.Boolean)">
+            <summary>
+            Invokes the job function.
+            </summary>
+            <param name="invocationTime">The time of the invocation, likely DateTime.Now.</param>
+            <param name="isPastDue">True if the invocation is because the invocation is due to a past due timer.</param>
+            <param name="runOnStartup">True if the invocation is because the timer is configured to run on startup.</param>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.ConstantSchedule">
+            <summary>
+            A simple constant interval scheduling strategy.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.ConstantSchedule.#ctor(System.TimeSpan)">
+            <summary>
+            Constructs an instance using the specified interval.
+            </summary>
+            <param name="interval">The constant interval between schedule occurrences.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.ConstantSchedule.GetNextOccurrence(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.ConstantSchedule.SetNextInterval(System.TimeSpan)">
+            <summary>
+            Override the next schedule interval using the specified interval.
+            </summary>
+            <param name="interval">The one time interval to use for the next occurrence.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.ConstantSchedule.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.CronSchedule">
+            <summary>
+            A scheduling strategy based on crontab expressions. <a href="http://en.wikipedia.org/wiki/Cron#CRON_expression"/>
+            for details. E.g. "59 11 * * 1-5" is an expression representing every Monday-Friday at 11:59 AM.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.CronSchedule.#ctor(System.String)">
+            <summary>
+            Constructs a new instance based on the specified crontab expression
+            </summary>
+            <param name="cronTabExpression">The crontab expression defining the schedule</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.CronSchedule.#ctor(NCrontab.CrontabSchedule)">
+            <summary>
+            Constructs a new instance based on the specified crontab schedule
+            </summary>
+            <param name="schedule">The crontab schedule to use</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.CronSchedule.GetNextOccurrence(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.CronSchedule.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.DailySchedule">
+            <summary>
+            A simple daily schedule. The schedule repeats each day, and each day it
+            cycles through the configured times.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.DailySchedule.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.DailySchedule.#ctor(System.String[])">
+            <summary>
+            Constructs an instance based on the specified collection of
+            <see cref="T:System.TimeSpan"/> strings.
+            </summary>
+            <param name="times">The daily schedule times.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.DailySchedule.#ctor(System.TimeSpan[])">
+            <summary>
+            Constructs an instance based on the specified collection of
+            <see cref="T:System.TimeSpan"/> instances.
+            </summary>
+            <param name="times">The daily schedule times.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.DailySchedule.GetNextOccurrence(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.DailySchedule.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.FileSystemScheduleMonitor">
+            <summary>
+            This class is used to monitor and record schedule occurrences. It stores
+            schedule occurrence info to the file system at runtime.
+            <see cref="T:Microsoft.Azure.WebJobs.TimerTriggerAttribute"/> uses this class to monitor
+            schedules to avoid missing scheduled executions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.FileSystemScheduleMonitor.#ctor">
+            <summary>
+            Constructs a new instance
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.FileSystemScheduleMonitor.#ctor(System.String)">
+            <summary>
+            Constructs a new instance
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Timers.FileSystemScheduleMonitor.StatusFilePath">
+            <summary>
+            Gets or sets the path where schedule status files will be written.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.FileSystemScheduleMonitor.GetStatusAsync(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.FileSystemScheduleMonitor.UpdateStatusAsync(System.String,Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleStatus)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.FileSystemScheduleMonitor.GetStatusFileName(System.String)">
+            <summary>
+            Returns the schedule status file name for the specified timer
+            </summary>
+            <param name="timerName">The timer name</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleMonitor">
+            <summary>
+            This class is used to monitor and record schedule occurrences. It stores
+            schedule occurrence info to persistent storage at runtime.
+            <see cref="T:Microsoft.Azure.WebJobs.TimerTriggerAttribute"/> uses this class to monitor
+            schedules to avoid missing scheduled executions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleMonitor.GetStatusAsync(System.String)">
+            <summary>
+            Gets the last recorded schedule status for the specified timer.
+            If the timer has not ran yet, null will be returned.
+            </summary>
+            <param name="timerName">The name of the timer to check.</param>
+            <returns>The schedule status.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleMonitor.UpdateStatusAsync(System.String,Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleStatus)">
+            <summary>
+            Updates the schedule status for the specified timer.
+            </summary>
+            <param name="timerName">The name of the timer.</param>
+            <param name="status">The new schedule status.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleMonitor.CheckPastDueAsync(System.String,System.DateTime,Microsoft.Azure.WebJobs.Extensions.Timers.TimerSchedule,Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleStatus)">
+            <summary>
+            Checks whether the schedule is currently past due.
+            </summary>
+            <remarks>
+            On startup, all schedules are checked to see if they are past due. Any
+            timers that are past due will be executed immediately by default. Subclasses can
+            change this behavior by inspecting the current time and schedule to determine
+            whether it should be considered past due.
+            </remarks>
+            <param name="timerName">The name of the timer to check.</param>
+            <param name="now">The time to check.</param>
+            <param name="schedule">The <see cref="T:Microsoft.Azure.WebJobs.Extensions.Timers.TimerSchedule"/></param>
+            <param name="lastStatus">The last recorded status, or null if the status has never been recorded.</param>
+            <returns>A non-zero <see cref="T:System.TimeSpan"/> if the schedule is past due, otherwise <see cref="F:System.TimeSpan.Zero"/>.</returns>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.TimerSchedule">
+            <summary>
+            A timer scheduling strategy used with <see cref="T:Microsoft.Azure.WebJobs.TimerTriggerAttribute"/> for schedule
+            based triggered jobs.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.TimerSchedule.GetNextOccurrence(System.DateTime)">
+            <summary>
+            Gets the next occurrence of the schedule based on the specified
+            base time.
+            </summary>
+            <param name="now">The time to compute the next schedule occurrence from.</param>
+            <returns>The next schedule occurrence.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.TimerSchedule.GetNextOccurrences(System.Int32,System.Nullable{System.DateTime})">
+            <summary>
+            Returns a collection of the next 'count' occurrences of the schedule,
+            starting from now.
+            </summary>
+            <param name="count">The number of occurrences to return.</param>
+            <returns>A collection of the next occurrences.</returns>
+            <param name="now">The optional <see cref="T:System.DateTime"/> to start from.</param>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Timers.WeeklySchedule">
+            <summary>
+            A simple weekly schedule. The schedule repeats each week, and each week,
+            it cycles through the specified set of daily schedule settings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.WeeklySchedule.Add(System.DayOfWeek,System.TimeSpan)">
+            <summary>
+            Adds the specified day/time occurrence to the schedule.
+            </summary>
+            <param name="day">The day to add the occurrence on.</param>
+            <param name="time">The time of the occurrence.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.WeeklySchedule.GetNextOccurrence(System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Timers.WeeklySchedule.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Bindings.StreamValueBinder">
+            <summary>
+            Flexible binder that can handle automatic mappings from <see cref="T:System.IO.Stream"/> to various other types.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.StreamValueBinder.#ctor(System.Reflection.ParameterInfo,Microsoft.Azure.WebJobs.Host.Bindings.BindStepOrder)">
+            <summary>
+            Constructs a new instance
+            </summary>
+            <param name="parameter">The parameter being bound to.</param>
+            <param name="bindStepOrder"></param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.StreamValueBinder.GetSupportedTypes(System.IO.FileAccess)">
+            <summary>
+            Gets the set of Types this binder supports based on the specified <see cref="T:System.IO.FileAccess"/>. 
+            From the base stream, this binder will handle conversions to the other types.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.StreamValueBinder.GetStream">
+            <summary>
+            Create the stream for this binding.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.StreamValueBinder.GetValueAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.StreamValueBinder.SetValueAsync(System.Object,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder">
+            <summary>
+            Base class for value binders.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder.#ctor(System.Type,Microsoft.Azure.WebJobs.Host.Bindings.BindStepOrder)">
+            <summary>
+            Constructs a new instance
+            </summary>
+            <param name="type">The <see cref="P:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder.Type"/> of the value.</param>
+            <param name="bindStepOrder">The <see cref="T:Microsoft.Azure.WebJobs.Host.Bindings.BindStepOrder"/>.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder.StepOrder">
+            <inheritdoc/>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder.Type">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder.GetValueAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder.ToInvokeString">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder.SetValueAsync(System.Object,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.Bindings.ValueBinder.MatchParameterType(System.Reflection.ParameterInfo,System.Collections.Generic.IEnumerable{System.Type})">
+            <summary>
+            Determines whether the Type of the specified parameter matches one of the specified
+            types.
+            </summary>
+            <param name="parameter">The parameter to check.</param>
+            <param name="types">The set of types to check against.</param>
+            <returns>True if a match is found, false otherwise.</returns>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.Utility.IsDynamic">
+            <summary>
+            Gets a value indicating whether the JobHost is running in a Dynamic
+            App Service WebApp.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.ErrorTriggerAttribute">
+            <summary>
+            Attribute used to mark a job function that should be triggered based
+            on error events.
+            </summary>
+            <remarks>
+            The method parameter type can be one of the following:
+            <list type="bullet">
+            <item><description><see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/></description></item>
+            <item><description><see cref="T:System.Collections.Generic.IEnumerable`1"/></description></item>
+            <item><description><see cref="T:Microsoft.Azure.WebJobs.Host.TraceEvent"/></description></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.ErrorTriggerAttribute.#ctor">
+            <summary>
+            Constructs a new instance. The error handler will be called on every error.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.ErrorTriggerAttribute.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructs a new instance. The error handler will be called when the specified
+            sliding window threshold is reached. See <see cref="T:Microsoft.Azure.WebJobs.Extensions.SlidingWindowTraceFilter"/>
+            for details.
+            </summary>
+            <param name="window">The sliding window duration. Should be expressed as a
+            <see cref="T:System.TimeSpan"/> value (e.g. "00:30:00").</param>
+            <param name="threshold">The error count threshold that must be reached before
+            the error function is invoked.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.ErrorTriggerAttribute.#ctor(System.Type)">
+            <summary>
+            Constructs a new instance. The error handler will be called based on the specified
+            custom <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/>.
+            </summary>
+            <param name="filterType">The <see cref="T:System.Type"/> of the custom <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/>.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.ErrorTriggerAttribute.FilterType">
+            <summary>
+            Gets the <see cref="T:System.Type"/> of the custom <see cref="T:Microsoft.Azure.WebJobs.Extensions.TraceFilter"/> type that will be used.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.ErrorTriggerAttribute.Window">
+            <summary>
+            Gets the sliding window duration. Should be expressed as a <see cref="T:System.TimeSpan"/>
+            value (e.g. "00:30:00").
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.ErrorTriggerAttribute.Threshold">
+            <summary>
+            Gets the error count threshold that must be reached before the function
+            is invoked.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.ErrorTriggerAttribute.Throttle">
+            <summary>
+            Gets the notification throttle window. The function will be triggered at most once
+            within this window. Should be expressed as a <see cref="T:System.TimeSpan"/> value (e.g. "00:30:00").
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.ErrorTriggerAttribute.Message">
+            <summary>
+            Gets the error message that should be used for notifications.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.FilesJobHostConfigurationExtensions">
+            <summary>
+            Extension methods for registering the Files extension.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.FilesJobHostConfigurationExtensions.UseFiles(Microsoft.Azure.WebJobs.JobHostConfiguration)">
+            <summary>
+            Enables use of File System extensions
+            </summary>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> to configure.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.FilesJobHostConfigurationExtensions.UseFiles(Microsoft.Azure.WebJobs.JobHostConfiguration,Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration)">
+            <summary>
+            Enables use of File System extensions
+            </summary>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> to configure.</param>
+            <param name="filesConfig">The <see cref="T:Microsoft.Azure.WebJobs.Extensions.Files.FilesConfiguration"></see> to use./></param>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.FileAttribute">
+            <summary>
+            Attribute used to bind a parameter to a file.
+            </summary>
+            <remarks>
+            The method parameter type can be one of the following:
+            <list type="bullet">
+            <item><description><see cref="T:System.IO.FileStream"/></description></item>
+            <item><description><see cref="T:System.IO.FileInfo"/></description></item>
+            <item><description><see cref="T:System.String"/></description></item>
+            <item><description><see cref="T:byte[]"/></description></item>
+            <item><description><see cref="T:System.IO.Stream"/></description></item>
+            <item><description><see cref="T:System.IO.TextWriter"/></description></item>
+            <item><description><see cref="T:System.IO.StreamWriter"/></description></item>
+            <item><description><see cref="T:System.IO.TextReader"/></description></item>
+            <item><description><see cref="T:System.IO.StreamReader"/></description></item>
+            <item><description>A user-defined type (serialized as JSON)</description></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.FileAttribute.#ctor(System.String,System.IO.FileAccess)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="path">The file path to bind to.</param>
+            <param name="access">The <see cref="T:System.IO.FileAccess"/> to use.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.FileAttribute.#ctor(System.String,System.IO.FileAccess,System.IO.FileMode)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="path">The file path to bind to.</param>
+            <param name="access">The <see cref="T:System.IO.FileAccess"/> to use.</param>
+            <param name="mode">The <see cref="T:System.IO.FileMode"/> to use.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.FileAttribute.Path">
+            <summary>
+            Gets the file path.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.FileAttribute.Access">
+            <summary>
+            Gets he <see cref="T:System.IO.FileAccess"/> to use.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.FileAttribute.Mode">
+            <summary>
+            Gets the <see cref="T:System.IO.FileMode"/> to use.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.FileTriggerAttribute">
+            <summary>
+            Attribute used to mark a job function that should be invoked based
+            on file events.
+            </summary>
+            <remarks>
+            The method parameter type can be one of the following:
+            <list type="bullet">
+            <item><description><see cref="T:System.IO.FileStream"/></description></item>
+            <item><description><see cref="T:System.IO.FileInfo"/></description></item>
+            <item><description><see cref="T:System.IO.FileSystemEventArgs"/></description></item>
+            <item><description><see cref="T:System.String"/></description></item>
+            <item><description><see cref="T:byte[]"/></description></item>
+            <item><description><see cref="T:System.IO.Stream"/></description></item>
+            <item><description><see cref="T:System.IO.TextReader"/></description></item>
+            <item><description><see cref="T:System.IO.StreamReader"/></description></item>
+            <item><description>A user-defined type (serialized as JSON)</description></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.FileTriggerAttribute.#ctor(System.String,System.String,System.IO.WatcherChangeTypes,System.Boolean)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="path">The root path that this trigger is configured to watch for files on.</param>
+            <param name="filter">The optional file filter that will be used.</param>
+            <param name="changeTypes">The <see cref="T:System.IO.WatcherChangeTypes"/> that will be used by the file watcher. The Default is Created.</param>
+            <param name="autoDelete">True if processed files should be deleted automatically, false otherwise. The default is False.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.FileTriggerAttribute.Path">
+            <summary>
+            Gets the root path that this trigger is configured to watch for files on.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.FileTriggerAttribute.Filter">
+            <summary>
+            Gets the optional file filter that will be used.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.FileTriggerAttribute.ChangeTypes">
+            <summary>
+            Gets the <see cref="T:System.IO.WatcherChangeTypes"/> that will be used by the file watcher.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.FileTriggerAttribute.AutoDelete">
+            <summary>
+            Gets a value indicating whether files should be automatically deleted after they
+            are successfully processed. When set to true, all files including any companion files
+            starting with the target file name will be deleted when the file is successfully processed.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.FileTriggerAttribute.GetRootPath">
+            <summary>
+            Returns the trigger path, minus any trailing template pattern for file name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.JobHostConfigurationExtensions">
+            <summary>
+            Extension methods for <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> facilitating extensibility scenarios.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.JobHostConfigurationExtensions.RegisterExtension``1(Microsoft.Azure.WebJobs.JobHostConfiguration,``0)">
+            <summary>
+            Registers the specified extension with the <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/>
+            </summary>
+            <typeparam name="TExtension">The type of extension being registered.</typeparam>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> to register the extension with.</param>
+            <param name="extension">The extension to register.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.JobHostConfigurationExtensions.RegisterExtensionConfigProvider(Microsoft.Azure.WebJobs.JobHostConfiguration,Microsoft.Azure.WebJobs.Host.Config.IExtensionConfigProvider)">
+            <summary>
+            Registers the specified <see cref="T:Microsoft.Azure.WebJobs.Host.Config.IExtensionConfigProvider"/>
+            </summary>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> to register the extension with.</param>
+            <param name="extension">The extension to register.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.JobHostConfigurationExtensions.RegisterBindingExtension(Microsoft.Azure.WebJobs.JobHostConfiguration,System.Object)">
+            <summary>
+            Registers the specified binding extension. The instance must implement one of the supported
+            binding interfaces (e.g. <see cref="T:Microsoft.Azure.WebJobs.Host.Bindings.IBindingProvider"/> or <see cref="T:Microsoft.Azure.WebJobs.Host.Triggers.ITriggerBindingProvider"/>).
+            </summary>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> to register the extension with.</param>
+            <param name="extension">The extension to register.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.JobHostConfigurationExtensions.RegisterBindingExtensions(Microsoft.Azure.WebJobs.JobHostConfiguration,System.Object[])">
+            <summary>
+            Registers the specified binding extensions
+            </summary>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> to register the extensions with.</param>
+            <param name="extensions">The extensions to register.</param>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.TimerJobHostConfigurationExtensions">
+            <summary>
+            Extension class used to register timer extensions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.TimerJobHostConfigurationExtensions.UseTimers(Microsoft.Azure.WebJobs.JobHostConfiguration)">
+            <summary>
+            Enables use of the Timer extensions
+            </summary>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> to configure.</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.TimerJobHostConfigurationExtensions.UseTimers(Microsoft.Azure.WebJobs.JobHostConfiguration,Microsoft.Azure.WebJobs.Extensions.Timers.TimersConfiguration)">
+            <summary>
+            Enables use of the Timer extensions
+            </summary>
+            <param name="config">The <see cref="T:Microsoft.Azure.WebJobs.JobHostConfiguration"/> to configure.</param>
+            <param name="timersConfig">The <see cref="T:Microsoft.Azure.WebJobs.Extensions.Timers.TimersConfiguration"/> to use.</param>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.TimerInfo">
+            <summary>
+            Provides access to timer schedule information for jobs triggered 
+            by <see cref="T:Microsoft.Azure.WebJobs.TimerTriggerAttribute"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.TimerInfo.#ctor(Microsoft.Azure.WebJobs.Extensions.Timers.TimerSchedule,Microsoft.Azure.WebJobs.Extensions.Timers.ScheduleStatus,System.Boolean)">
+            <summary>
+            Constructs a new instance
+            </summary>
+            <param name="schedule">The timer trigger schedule.</param>
+            <param name="status">The current schedule status.</param>
+            <param name="isPastDue">True if the schedule is past due, false otherwise.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.TimerInfo.Schedule">
+            <summary>
+            Gets the schedule for the timer trigger.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.TimerInfo.ScheduleStatus">
+            <summary>
+            Gets or sets the current schedule status for this timer.
+            If schedule monitoring is not enabled for this timer (see <see cref="P:Microsoft.Azure.WebJobs.TimerTriggerAttribute.UseMonitor"/>)
+            this property will return null.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.TimerInfo.IsPastDue">
+            <summary>
+            Gets or sets a value indicating whether this timer invocation
+            is due to a missed schedule occurrence.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.TimerInfo.FormatNextOccurrences(System.Int32,System.Nullable{System.DateTime})">
+            <summary>
+            Formats the next 'count' occurrences of the schedule into an
+            easily loggable string.
+            </summary>
+            <param name="count">The number of occurrences to format.</param>
+            <param name="now">The optional <see cref="T:System.DateTime"/> to start from.</param>
+            <returns>A formatted string with the next occurrences.</returns>
+        </member>
+        <member name="T:Microsoft.Azure.WebJobs.TimerTriggerAttribute">
+            <summary>
+            Attribute used to mark a job function that should be invoked periodically based on
+            a timer schedule. The trigger parameter type must be <see cref="T:Microsoft.Azure.WebJobs.TimerInfo"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.TimerTriggerAttribute.#ctor(System.String)">
+            <summary>
+            Constructs a new instance based on the schedule expression passed in.
+            </summary>
+            <param name="scheduleExpression">A schedule expression. This can either be a 6 field crontab expression
+            <a href="http://en.wikipedia.org/wiki/Cron#CRON_expression"/> or a <see cref="T:System.TimeSpan"/>
+            string (e.g. "00:30:00").</param>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.TimerTriggerAttribute.#ctor(System.Type)">
+            <summary>
+            Constructs a new instance using the specified <see cref="T:Microsoft.Azure.WebJobs.Extensions.Timers.TimerSchedule"/> type.
+            </summary>
+            <param name="scheduleType">The type of schedule to use.</param>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.TimerTriggerAttribute.ScheduleExpression">
+            <summary>
+            Gets the schedule expression.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.TimerTriggerAttribute.ScheduleType">
+            <summary>
+            Gets the <see cref="T:Microsoft.Azure.WebJobs.Extensions.Timers.TimerSchedule"/> type.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.TimerTriggerAttribute.UseMonitor">
+            <summary>
+            Gets or sets a value indicating whether the schedule should be monitored.
+            Schedule monitoring persists schedule occurrences to aid in ensuring the
+            schedule is maintained correctly even when roles restart.
+            If not set explicitly, this will default to true for schedules that have a recurrence
+            interval greater than 1 minute (i.e., for schedules that occur more than once
+            per minute, persistence will be disabled).
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.TimerTriggerAttribute.RunOnStartup">
+            <summary>
+            Gets or sets a value indicating whether the function should be invoked
+            immediately on startup. After the initial startup run, the function will
+            be run on schedule thereafter.
+            </summary>
+        </member>
+    </members>
+</doc>

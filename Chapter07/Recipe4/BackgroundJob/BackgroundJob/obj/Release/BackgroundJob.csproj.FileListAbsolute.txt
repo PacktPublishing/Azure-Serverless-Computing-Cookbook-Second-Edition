@@ -1,0 +1,57 @@
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\BackgroundJob.exe.config
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\BackgroundJob.exe
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\BackgroundJob.pdb
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Release\BackgroundJob.exe
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Release\BackgroundJob.pdb
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Newtonsoft.Json.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\System.Net.Http.Formatting.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Newtonsoft.Json.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\System.Net.Http.Formatting.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Azure.WebJobs.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Data.Edm.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\NCrontab.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\System.Threading.Tasks.Dataflow.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Azure.WebJobs.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Data.Edm.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\System.Threading.Tasks.Dataflow.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\de\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\es\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\fr\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\it\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\ja\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\ko\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\ru\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Release\BackgroundJob.csproj.BackgroundJob.exe.config
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\BackgroundJob.exe.config
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Release\BackgroundJob.exe
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Release\BackgroundJob.pdb
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\BackgroundJob.exe
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\BackgroundJob.pdb
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Azure.WebJobs.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Data.Edm.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\NCrontab.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Newtonsoft.Json.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\System.Net.Http.Formatting.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\System.Threading.Tasks.Dataflow.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Azure.WebJobs.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Microsoft.Data.Edm.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\Newtonsoft.Json.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\System.Net.Http.Formatting.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\System.Threading.Tasks.Dataflow.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\de\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\es\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\fr\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\it\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\ja\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\ko\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\ru\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Release\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Release\BackgroundJob.csprojResolveAssemblyReference.cache
+D:\Cookbook\CodeBundle\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Release\BackgroundJob.csproj.BackgroundJob.exe.config

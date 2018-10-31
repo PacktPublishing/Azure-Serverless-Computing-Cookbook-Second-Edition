@@ -1,0 +1,11 @@
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\bin\Debug\MyEventHubApp.exe.config
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\bin\Debug\MyEventHubApp.exe
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\bin\Debug\MyEventHubApp.pdb
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\bin\Debug\Microsoft.Azure.Amqp.dll
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\bin\Debug\Microsoft.Azure.EventHubs.dll
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\bin\Debug\Microsoft.Azure.Amqp.xml
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\obj\Debug\MyEventHubApp.csprojResolveAssemblyReference.cache
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\obj\Debug\MyEventHubApp.exe
+D:\Cookbook\Dev\CookBook\Chapter10\DefensiveJobs\MyEventHubApp\obj\Debug\MyEventHubApp.pdb
+D:\Cookbook\CodeBundle\Chapter9\Recipe2\DefensiveJobs\MyEventHubApp\bin\Debug\MyEventHubApp.exe.config
+D:\Cookbook\CodeBundle\Chapter9\Recipe2\DefensiveJobs\MyEventHubApp\obj\Debug\MyEventHubApp.csprojResolveAssemblyReference.cache

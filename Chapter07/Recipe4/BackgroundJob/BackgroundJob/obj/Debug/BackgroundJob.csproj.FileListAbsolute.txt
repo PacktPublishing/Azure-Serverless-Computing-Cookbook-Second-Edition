@@ -1,0 +1,6 @@
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Debug\BackgroundJob.exe.config
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Debug\BackgroundJob.exe
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\bin\Debug\BackgroundJob.pdb
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Debug\BackgroundJob.csprojResolveAssemblyReference.cache
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Debug\BackgroundJob.exe
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe4\BackgroundJob\BackgroundJob\obj\Debug\BackgroundJob.pdb

@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "path": "userprofileimagecontainer/{name}",
+      "type": "blobTrigger",
+      "name": "image",
+      "direction": "in",
+      "connection": "azurecookbook1afcb_STORAGE"
+    },
+    {
+      "path": "userprofileimagecontainer-md/{name}",
+      "type": "blob",
+      "name": "imageSmall",
+      "direction": "out",
+      "connection": "azurecookbook1afcb_STORAGE"
+    },
+    {
+      "path": "userprofileimagecontainer-sm/{name}",
+      "type": "blob",
+      "name": "imageMedium",
+      "direction": "out",
+      "connection": "AzureWebJobsDashboard"
+    }
+  ],
+  "disabled": false
+}

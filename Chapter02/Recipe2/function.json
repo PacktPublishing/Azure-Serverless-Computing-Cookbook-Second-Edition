@@ -1,0 +1,40 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "objUserProfileTable",
+      "tableName": "tblUserProfile",
+      "connection": "azurecookbook1afcb_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "queue",
+      "name": "objUserProfileQueueItem",
+      "queueName": "userprofileimagesqueue",
+      "connection": "azurecookbook1afcb_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "sendGrid",
+      "name": "message",
+      "apiKey": "SendGridApiKey",
+      "to": "to@gmail.com",
+      "from": "from@gmail.com",
+      "subject": "new User",
+      "text": "New body",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

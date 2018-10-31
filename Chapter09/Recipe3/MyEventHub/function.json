@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "myEventHubMessage",
+      "direction": "in",
+      "path": "capturemessage",
+      "connection": "AzureIoTEventHub_RootManageSharedAccessKey_EVENTHUB"
+    }
+  ],
+  "disabled": false
+}

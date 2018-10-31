@@ -1,0 +1,140 @@
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\MyPrecompiledFunctions.pdb
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.Extensions.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.Host.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.Edm.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.OData.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.Services.Client.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.WindowsAzure.Storage.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\NCrontab.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Newtonsoft.Json.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Spatial.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Threading.Tasks.Dataflow.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.Extensions.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.Host.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.Edm.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.OData.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.Services.Client.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.WindowsAzure.Storage.pdb
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.WindowsAzure.Storage.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Newtonsoft.Json.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Spatial.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Threading.Tasks.Dataflow.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\de\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\es\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\fr\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\it\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ja\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ko\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ru\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\de\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\es\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\fr\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\it\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ja\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ko\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ru\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\de\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\es\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\it\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\de\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\es\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\fr\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\it\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ja\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ko\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ru\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hans\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hant\System.Spatial.resources.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\obj\Release\MyPrecompiledFunctions.pdb
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\MyPrecompiledFunctions.dll.config
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\MyPrecompiledFunctions.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\obj\Release\MyPrecompiledFunctions.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\obj\Release\MyPrecompiledFunctions.csprojResolveAssemblyReference.cache
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Net.Http.Formatting.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Web.Http.dll
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Net.Http.Formatting.xml
+D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Web.Http.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\MyPrecompiledFunctions.dll.config
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\MyPrecompiledFunctions.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\MyPrecompiledFunctions.pdb
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.Extensions.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.Host.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.Edm.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.OData.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.Services.Client.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.WindowsAzure.Storage.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\NCrontab.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Newtonsoft.Json.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Net.Http.Formatting.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Spatial.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Threading.Tasks.Dataflow.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Web.Http.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.Extensions.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Azure.WebJobs.Host.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.Edm.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.OData.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.Data.Services.Client.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.WindowsAzure.Storage.pdb
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Microsoft.WindowsAzure.Storage.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\Newtonsoft.Json.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Net.Http.Formatting.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Spatial.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Threading.Tasks.Dataflow.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\System.Web.Http.xml
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\de\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\es\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\fr\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\it\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ja\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ko\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ru\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\de\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\es\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\fr\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\it\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ja\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ko\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ru\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\de\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\es\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\it\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\de\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\es\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\fr\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\it\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ja\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ko\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\ru\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hans\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\bin\Release\zh-Hant\System.Spatial.resources.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\obj\Release\MyPrecompiledFunctions.csprojResolveAssemblyReference.cache
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\obj\Release\MyPrecompiledFunctions.dll
+D:\Cookbook\CodeBundle\Chapter7\Recipe3\MyPrecompiledFunctions\MyPrecompiledFunctions\obj\Release\MyPrecompiledFunctions.pdb

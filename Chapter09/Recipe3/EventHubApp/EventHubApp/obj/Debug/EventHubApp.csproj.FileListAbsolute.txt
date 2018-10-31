@@ -1,0 +1,12 @@
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\EventHubApp.exe.config
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\EventHubApp.exe
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\EventHubApp.pdb
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\Microsoft.Azure.Amqp.dll
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\Microsoft.Azure.EventHubs.dll
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\Newtonsoft.Json.dll
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\Microsoft.Azure.Amqp.xml
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\Microsoft.Azure.EventHubs.xml
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\bin\Debug\Newtonsoft.Json.xml
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\obj\Debug\EventHubApp.csprojResolveAssemblyReference.cache
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\obj\Debug\EventHubApp.exe
+D:\Cookbook\CodeBundle\Chapter9\Recipe3\EventHubApp\EventHubApp\obj\Debug\EventHubApp.pdb

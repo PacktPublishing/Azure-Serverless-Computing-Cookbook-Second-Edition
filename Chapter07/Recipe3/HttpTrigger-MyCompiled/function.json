@@ -1,0 +1,18 @@
+{
+  "scriptFile": "bin\\MyPrecompiledFunctions.dll",
+            "entryPoint": "PreCompiledFunctionSample.MyFunction.MyRun",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
