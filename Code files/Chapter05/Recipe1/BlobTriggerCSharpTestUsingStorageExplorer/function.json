@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "samples-workitems/{name}",
+      "connection": "azurefunctionscookbooks_STORAGE"
+    }
+  ],
+  "disabled": false
+}

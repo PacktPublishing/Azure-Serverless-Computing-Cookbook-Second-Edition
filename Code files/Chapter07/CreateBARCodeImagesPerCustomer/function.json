@@ -1,0 +1,9 @@
+{
+  "bindings": [
+    {
+      "name": "customerContext",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ]
+}

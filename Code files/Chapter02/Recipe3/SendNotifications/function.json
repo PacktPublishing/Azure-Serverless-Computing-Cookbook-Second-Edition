@@ -1,0 +1,24 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "notificationqueue",
+      "connection": "azurefunctionscookbooks_STORAGE"
+    },
+    {
+      "type": "sendGrid",
+      "name": "message",
+      "apiKey": "SendGrid-APKey",
+      "direction": "out"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "userregistrationemaillogs/{rand-guid}.log",
+      "connection": "azurefunctionscookbooks_STORAGE",
+      "direction": "out"
+    }
+  ]
+}

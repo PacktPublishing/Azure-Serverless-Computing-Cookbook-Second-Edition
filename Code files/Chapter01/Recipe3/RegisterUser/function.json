@@ -1,0 +1,33 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "objUserProfileTable",
+      "tableName": "tblUserProfile",
+      "connection": "azurefunctionscookbooks_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "queue",
+      "name": "objUserProfileQueueItem",
+      "queueName": "userprofileimagesqueue",
+      "connection": "azurefunctionscookbooks_STORAGE",
+      "direction": "out"
+    }
+  ]
+}

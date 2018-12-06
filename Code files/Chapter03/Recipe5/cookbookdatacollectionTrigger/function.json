@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "input",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "cookbookdatacollectionTrigger_ConnectionString",
+      "databaseName": "cookbookdatabase",
+      "collectionName": "cookbookdatacollection",
+      "createLeaseCollectionIfNotExists": true
+    }
+  ]
+}

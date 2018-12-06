@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "notificationqueue",
+      "connection": "azurefunctionscookbooks_STORAGE"
+    },
+    {
+      "type": "sendGrid",
+      "name": "message",
+      "apiKey": "SendGrid-APKey",
+      "to": "prawin2k@gmail.com",
+      "from": "donotreply@example.com",
+      "subject": "New User got Registered Successfully",
+      "text": "Hi Admin, A new user got registered successfully. Thank you.",
+      "direction": "out"
+    }
+  ]
+}

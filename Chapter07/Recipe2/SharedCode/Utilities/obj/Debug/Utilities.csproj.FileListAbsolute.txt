@@ -1,4 +1,0 @@
-D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe1\SharedCode\Utilities\bin\Debug\Utilities.dll
-D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe1\SharedCode\Utilities\bin\Debug\Utilities.pdb
-D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe1\SharedCode\Utilities\obj\Debug\Utilities.dll
-D:\Cookbook\1_AllRecipes\Downloadable Files\Chapter7\Recipe1\SharedCode\Utilities\obj\Debug\Utilities.pdb

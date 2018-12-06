@@ -1,9 +1,0 @@
-{
-  "bindings": [
-    {
-      "name": "greetingContext",
-      "type": "activityTrigger",
-      "direction": "in"
-    }
-  ]
-}

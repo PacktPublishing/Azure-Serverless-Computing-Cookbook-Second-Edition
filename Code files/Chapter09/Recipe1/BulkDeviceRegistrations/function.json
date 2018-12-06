@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "queue",
+      "name": "DeviceQueue",
+      "queueName": "devicequeue",
+      "connection": "azurefunctionscookbooks_STORAGE",
+      "direction": "out"
+    }
+  ]
+}

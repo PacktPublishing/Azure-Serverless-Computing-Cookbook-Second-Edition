@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "images/{name}",
+      "connection": "azurefunctionscookbooks_STORAGE"
+    },
+    {
+      "type": "table",
+      "name": "outMaleTable",
+      "tableName": "MaleFaceRectangle",
+      "connection": "azurefunctionscookbooks_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "outFemaleTable",
+      "tableName": "faceFeMaleRectangle",
+      "connection": "azurefunctionscookbooks_STORAGE",
+      "direction": "out"
+    }
+  ]
+}
