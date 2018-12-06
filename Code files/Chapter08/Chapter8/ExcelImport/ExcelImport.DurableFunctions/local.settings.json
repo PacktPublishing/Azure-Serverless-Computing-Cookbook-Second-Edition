@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=azurefunctionscookbooks;AccountKey=TxhVTtYr4afPG7VbRJLwiU35JXQsU2By9I9CM43pUTCTDRDTvqJss8zsQe/d3zXdZE336X1EfiELvI0d5zCkBw==;BlobEndpoint=https://azurefunctionscookbooks.blob.core.windows.net/;TableEndpoint=https://azurefunctionscookbooks.table.core.windows.net/;QueueEndpoint=https://azurefunctionscookbooks.queue.core.windows.net/;FileEndpoint=https://azurefunctionscookbooks.file.core.windows.net/",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "StorageConnection": "DefaultEndpointsProtocol=https;AccountName=azurefunctionscookbooks;AccountKey=TxhVTtYr4afPG7VbRJLwiU35JXQsU2By9I9CM43pUTCTDRDTvqJss8zsQe/d3zXdZE336X1EfiELvI0d5zCkBw==;EndpointSuffix=core.windows.net"
+  },
+  "ConnectionStrings": {
+    "StorageConnection": "DefaultEndpointsProtocol=https;AccountName=azurefunctionscookbooks;AccountKey=TxhVTtYr4afPG7VbRJLwiU35JXQsU2By9I9CM43pUTCTDRDTvqJss8zsQe/d3zXdZE336X1EfiELvI0d5zCkBw==;EndpointSuffix=core.windows.net",
+    "CosmosDBConnectionString": "AccountEndpoint=https://azurefunctionscookbooks.documents.azure.com:443/;AccountKey=8hSAg4ieePH3plmh8o41d40Z79sJDpmoFxsZyXQVRtAEKutOlSDL5CbNgZsFN8jKXpdxrsfIU8y1thFVARrl9g==;"
+  }
+}

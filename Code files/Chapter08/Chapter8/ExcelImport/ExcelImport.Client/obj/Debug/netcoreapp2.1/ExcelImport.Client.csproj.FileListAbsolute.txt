@@ -1,0 +1,12 @@
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\bin\Debug\netcoreapp2.1\ExcelImport.Client.deps.json
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\bin\Debug\netcoreapp2.1\ExcelImport.Client.runtimeconfig.json
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\bin\Debug\netcoreapp2.1\ExcelImport.Client.runtimeconfig.dev.json
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\bin\Debug\netcoreapp2.1\ExcelImport.Client.dll
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\bin\Debug\netcoreapp2.1\ExcelImport.Client.pdb
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\obj\Debug\netcoreapp2.1\ExcelImport.Client.csprojAssemblyReference.cache
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\obj\Debug\netcoreapp2.1\ExcelImport.Client.csproj.CoreCompileInputs.cache
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\obj\Debug\netcoreapp2.1\ExcelImport.Client.AssemblyInfoInputs.cache
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\obj\Debug\netcoreapp2.1\ExcelImport.Client.AssemblyInfo.cs
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\obj\Debug\netcoreapp2.1\ExcelImport.Client.dll
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\obj\Debug\netcoreapp2.1\ExcelImport.Client.pdb
+C:\Users\vmadmin\source\repos\Chapter9\ExcelImport\ExcelImport.Client\bin\Debug\netcoreapp2.1\appsettings.json

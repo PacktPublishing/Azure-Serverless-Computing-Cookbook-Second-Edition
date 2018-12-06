@@ -1,0 +1,13 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions-1.0.23",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "activityTrigger",
+      "name": "RequestUnits"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/ExcelImport.DurableFunctions.dll",
+  "entryPoint": "ExcelImport.DurableFunctions.ExcelImport_Orchestrator.ScaleRU_AT"
+}
