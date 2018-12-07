@@ -4,7 +4,7 @@
 
 This is the code repository for [Azure Serverless Computing Cookbook - Second Edition](https://www.packtpub.com/virtualization-and-cloud/azure-serverless-computing-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789615265), published by Packt.
 
-**Build and monitor Azure applications hosted on serverless architecture using Azure Functions **
+**Build and monitor Azure applications hosted on serverless architecture using Azure Functions**
 
 ## What is this book about?
 Microsoft provides a solution for easily running small segments of code in the cloud with Azure Functions. The second edition of Azure Serverless Computing Cookbook starts with intermediate-level recipes on serverless computing along with some use cases demonstrating the benefits and key features of Azure Functions. You’ll explore the core aspects of Azure Functions, such as the services it provides, how you can develop and write Azure Functions, and how to monitor and troubleshoot them.
