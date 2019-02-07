@@ -1,0 +1,14 @@
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\bin\Debug\netcoreapp2.1\myqueuemessages.deps.json
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\bin\Debug\netcoreapp2.1\myqueuemessages.runtimeconfig.json
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\bin\Debug\netcoreapp2.1\myqueuemessages.runtimeconfig.dev.json
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\bin\Debug\netcoreapp2.1\myqueuemessages.dll
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\obj\Debug\netcoreapp2.1\myqueuemessages.Properties.Resources.resources
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\obj\Debug\netcoreapp2.1\myqueuemessages.csproj.GenerateResource.cache
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\obj\Debug\netcoreapp2.1\myqueuemessages.csproj.CoreCompileInputs.cache
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\obj\Debug\netcoreapp2.1\myqueuemessages.AssemblyInfoInputs.cache
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\obj\Debug\netcoreapp2.1\myqueuemessages.AssemblyInfo.cs
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\obj\Debug\netcoreapp2.1\myqueuemessages.csprojAssemblyReference.cache
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\bin\Debug\netcoreapp2.1\myqueuemessages.pdb
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\obj\Debug\netcoreapp2.1\myqueuemessages.dll
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\obj\Debug\netcoreapp2.1\myqueuemessages.pdb
+C:\Cookbook\Code\Chapter9\Recipe2\myqueuemessages\myqueuemessages\bin\Debug\netcoreapp2.1\myqueuemessages.dll.config

@@ -1,0 +1,13 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "myEventHubMessage",
+      "direction": "in",
+      "eventHubName": "samples-workitems",
+      "connection": "AzureIoTEventHubs_RootManageSharedAccessKey_EVENTHUB",
+      "consumerGroup": "$Default"
+    }
+  ],
+  "disabled": false
+}

@@ -18,8 +18,8 @@
     {
       "type": "queue",
       "name": "DeviceQueue",
-      "queueName": "devicequeue",
-      "connection": "azurefunctionscookbooks_STORAGE",
+      "queueName": "outqueue",
+      "connection": "AzureWebJobsStorage",
       "direction": "out"
     }
   ]
