@@ -1,3 +1,8 @@
+## $5 Tech Unlocked 2021!
+[Buy and download this product for only $5 on PacktPub.com](https://www.packtpub.com/)
+-----
+*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
+
 # Azure Serverless Computing Cookbook - Second Edition
 
 <a href="https://www.packtpub.com/virtualization-and-cloud/azure-serverless-computing-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789615265"><img src="https://d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B12279.png" alt="Azure Serverless Computing Cookbook - Second Edition" height="256px" align="right"></a>
